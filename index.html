@@ -4,6 +4,7 @@
     <title>SaproZians's Server Info</title>
     <link rel="icon" href="SaproZ.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> <!-- Add a new font -->
     <meta property="og:title" content="SaproZians's Server Info">
     <meta property="og:description" content="The detailed information about the server called SaproZians. Make sure to read it to know more about the server.">
     <meta property="og:image" content="https://saprozians.github.io/Info/sapro%20banner.jpg">
@@ -36,7 +37,7 @@
             flex-direction: column;
             justify-content: center;
             padding: 20px;
-            animation: fadeIn 1s;
+            animation: fadeIn 2s; /* Make the animation longer */
             margin-top: 60px; /* Add a top margin to the content */
         }
         .title {
@@ -58,9 +59,11 @@
         }
         h1 {
             font-size: 2em;
+            text-align: center; /* Center the topic texts */
         }
         p {
             font-size: 1.5em;
+            text-align: center; /* Center the topic texts */
         }
         h2 {
             margin-bottom: 0;
@@ -90,14 +93,9 @@
             text-decoration: none;
             margin-right: 15px;
         }
-        .navbar input[type="search"] {
-            padding: 5px;
-            transition: width 0.4s ease-in-out;
-            background-color: #555; /* Change the background color of the search bar */
-            color: white; /* Change the text color of the search bar */
-        }
-        .navbar input[type="search"]:focus {
-            width: 200px;
+        .navbar span {
+            font-size: 2em; /* Make the text larger */
+            font-family: 'Playfair Display', serif; /* Change the font */
         }
         .dropdown {
             position: relative;
@@ -132,7 +130,7 @@
             <span>SaproZians</span>
         </div>
         <div>
-            <input type="search" placeholder="Search...">
+            <a href="https://discord.com/channels/986982849330675742/1157968589161250816">Server Journal</a>
         </div>
     </div>
     <div class="bg"></div>
