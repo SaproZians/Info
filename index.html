@@ -143,13 +143,31 @@
         }
         .dropdown-content a:hover {background-color: #f1f1f1}
     </style>
+    <script>
+        // JavaScript for the dropdown menu
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Navigation bar -->
     <div class="navbar">
         <div class="dropdown">
-            <span>☰</span>
-            <div class="dropdown-content">
+            <span onclick="myFunction()" class="dropbtn">☰</span>
+            <div id="myDropdown" class="dropdown-content">
                 <a href="https://discord.gg/saprozians-forever-986982849330675742">Join the server</a>
                 <a href="https://www.youtube.com/@BeastSapro">Sapro Gaming Channel Link</a>
             </div>
