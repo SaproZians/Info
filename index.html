@@ -23,7 +23,7 @@
             left: 0;
             height: 100%; 
             width: 100%;
-            background: url('Background banner.jpg') no-repeat center center fixed; 
+            background: url('sapro banner.jpg') no-repeat center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -56,6 +56,8 @@
         .topics a {
             font-family: 'Montserrat', sans-serif;
             color: green;
+            text-decoration: none; /* Remove the underline */
+            font-size: 1.2em; /* Make the text larger */
         }
         h1 {
             font-size: 2em;
@@ -84,7 +86,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center; /* Align items vertically */
-            background-color: #333;
+            background: linear-gradient(to right, black , white); /* Add a gradient background */
             color: white;
             padding: 15px;
             z-index: 1;
@@ -97,6 +99,16 @@
         .navbar span {
             font-size: 2em; /* Make the text larger */
             font-family: 'Playfair Display', serif; /* Change the font */
+        }
+        .navbar a:hover {
+            animation: colorchange 1s infinite; /* Add a color change animation */
+        }
+        @keyframes colorchange {
+            0% { color: red; }
+            25% { color: yellow; }
+            50% { color: blue; }
+            75% { color: green; }
+            100% { color: red; }
         }
         .dropdown {
             position: relative;
