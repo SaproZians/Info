@@ -38,8 +38,10 @@ body, html {
     right: 20px;
     top: 20px;
 }
-.topics a {
+.topics ul {
     font-family: 'Montserrat', sans-serif;
+}
+.topics a {
     color: green;
 }
 h1 {
