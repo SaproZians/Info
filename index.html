@@ -92,19 +92,42 @@
         }
         .navbar input[type="search"] {
             padding: 5px;
+            transition: width 0.4s ease-in-out;
+        }
+        .navbar input[type="search"]:focus {
+            width: 200px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
     </style>
 </head>
 <body>
     <!-- Navigation bar -->
     <div class="navbar">
-        <div>
+        <div style="display: flex; align-items: center;">
             <img src="SaproZ.ico" alt="SaproZians Icon" style="height: 30px;">
             <span>SaproZians</span>
         </div>
-        <div>
-            <a href="https://discord.gg/saprozians-forever-986982849330675742">Join the server</a>
-            <a href="https://www.youtube.com/@BeastSapro">Sapro Gaming Channel Link</a>
+        <div class="dropdown">
+            <span>☰</span>
+            <div class="dropdown-content">
+                <a href="https://discord.gg/saprozians-forever-986982849330675742">Join the server</a>
+                <a href="https://www.youtube.com/@BeastSapro">Sapro Gaming Channel Link</a>
+            </div>
         </div>
         <div>
             <input type="search" placeholder="Search...">
