@@ -1,6 +1,6 @@
 <link rel="icon" href="SaproZ.ico" type="image/x-icon">
 
-# SaproZians Information.
+#Info
 
 This is a template for a GitHub repository. Click on the topics to navigate to the relevant sections.
 
