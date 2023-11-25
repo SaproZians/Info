@@ -71,9 +71,42 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+        /* CSS for the navigation bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .navbar input[type="search"] {
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div>
+            <img src="SaproZ.ico" alt="SaproZians Icon" style="height: 30px;">
+            <span>SaproZians</span>
+        </div>
+        <div>
+            <a href="https://discord.gg/saprozians-forever-986982849330675742">Join the server</a>
+            <a href="https://www.youtube.com/@BeastSapro">Sapro Gaming Channel Link</a>
+        </div>
+        <div>
+            <input type="search" placeholder="Search...">
+        </div>
+    </div>
     <div class="bg"></div>
     <div class="content">
         <h1 class="title">My GitHub Repository</h1>
