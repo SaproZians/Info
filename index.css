@@ -1,4 +1,48 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    background: url('sapro banner.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.topics {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
 .topics a {
     font-family: 'Montserrat', sans-serif;
     color: green;
+}
+h1 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.5em;
+}
+h2 {
+    margin-bottom: 0;
+}
+p {
+    margin-top: 0;
 }
