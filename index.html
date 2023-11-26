@@ -300,17 +300,29 @@
     </div>
     <!-- Topics Sidebar -->
     <div class="topics">
-        <ul>
-            <li><a href="#topic1">Respect channel topics</a></li>
-            <li><a href="#topic2">Illegal Activities</a></li>
-            <li><a href="#topic3">No NSFW Content/Gore/Being Weird</a></li>
-            <li><a href="#topic4">Be respectful to everyone</a></li>
-            <li><a href="#topic5">Political Discussions</a></li>
-            <li><a href="#topic6">Profiles</a></li>
-            <li><a href="#topic7">Talking to newcomers</a></li>
-            <li><a href="#topic8">Automod/Moderation</a></li>
-            <li><a href="#topic9">Common sense</a></li>
-            <li><a href="#topic10">Additional Information</a></li>
+<div class="topics">
+    <ul>
+        <li><a href="#topic1" onclick="scrollToSection('#topic1')">Respect channel topics</a></li>
+        <li><a href="#topic2" onclick="scrollToSection('#topic2')">Illegal Activities</a></li>
+        <li><a href="#topic3" onclick="scrollToSection('#topic3')">No NSFW Content/Gore/Being Weird</a></li>
+        <li><a href="#topic4" onclick="scrollToSection('#topic4')">Be respectful to everyone</a></li>
+        <li><a href="#topic5" onclick="scrollToSection('#topic5')">Political Discussions</a></li>
+        <li><a href="#topic6" onclick="scrollToSection('#topic6')">Profiles</a></li>
+        <li><a href="#topic7" onclick="scrollToSection('#topic7')">Talking to newcomers</a></li>
+        <li><a href="#topic8" onclick="scrollToSection('#topic8')">Automod/Moderation</a></li>
+        <li><a href="#topic9" onclick="scrollToSection('#topic9')">Common Sense</a></li>
+        <li><a href="#topic10" onclick="scrollToSection('#topic10')">Additional Information</a></li>
+    </ul>
+</div>
+
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.querySelector(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
             
         </ul>
     </div>
