@@ -65,6 +65,7 @@
             position: fixed;
             right: 20px;
             top: 80px;
+            display: none; /* Hide initially on small screens */
         }
 
         .topics a {
@@ -75,10 +76,9 @@
             font-size: 1.5em;
         }
 
-        /* Add the following styles for mobile responsiveness */
         @media only screen and (max-width: 768px) {
             .topics {
-                display: none;
+                display: block; /* Show on small screens */
             }
 
             .content {
