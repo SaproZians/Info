@@ -137,7 +137,7 @@
         }
         /* CSS for the dropdown menu */
         .dropdown-content a {
-            color: lightblue; /* Change the text color to light blue */
+            color: lightblue !important; /* Change the text color to light blue */
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -153,7 +153,7 @@
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
-                for (i = 0; i < dropdowns.length; i++) {
+                for (i = 0; < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
                     if (openDropdown.classList.contains('show')) {
                         openDropdown.classList.remove('show');
@@ -184,11 +184,11 @@
     <div class="bg"></div>
     <div class="content">
         <h1 class="title">SaproZians</h1>
-        <p class="description">This is a full cover of SaproZian's rules which we cannot entirely list in the #rules channel inside the server. Thank you in advance for reading!</p>
+        <p class="description">This is a full cover of SaproZian's rules which we cannot entirely list in the #rules channel inside the server. Make sure to read <a href="https://discord.com/terms">Discord ToS</p> and <a href="https://discord.com/guidelines">Community Guidelines</p> since we strictly follow these in the server. Thank you in advance for reading!</p>
     </div>
     <div class="topics">
         <ul>
-            <li><a href="#topic1">Respect channel topics.</a></li>
+            <li><a href="#topic1">Respect channel topics</a></li>
             <li><a href="#topic2">Topic 2</a></li>
             <li><a href="#topic3">Topic 3</a></li>
         </ul>
