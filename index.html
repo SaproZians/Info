@@ -374,6 +374,13 @@
             scrollToSection(sectionId);
         });
     });
+
+    // Additional Information click
+    document.getElementById('additional-info-link').addEventListener('click', function (e) {
+        e.preventDefault();
+        var sectionId = this.getAttribute('href');
+        scrollToSection(sectionId);
+    });
 </script>
             
         </ul>
