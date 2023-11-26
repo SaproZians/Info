@@ -167,6 +167,7 @@
             100% {
                 color: red;
             }
+
         }
 
         .dropdown {
@@ -200,6 +201,7 @@
                 opacity: 1;
                 top: 75px;
             }
+
         }
 
         .dropdown-content a {
@@ -211,6 +213,30 @@
 
         .dropdown-content a:hover {
             background-color: #f1f1f1
+        }
+
+        /* Additional Information Styles */
+        .additional-info {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .additional-info h2 {
+            font-size: 2.5em;
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+
+        .additional-info hr {
+            border: 1px solid gray;
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Exclude Dropdown Styles */
+        .exclude-dropdown {
+            color: white;
         }
     </style>
     <script>
@@ -239,7 +265,9 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <div class="navbar">
+        <!-- Dropdown -->
         <div class="dropdown">
             <span onclick="myFunction()" class="dropbtn">☰</span>
             <div id="myDropdown" class="dropdown-content">
@@ -247,21 +275,26 @@
                 <a href="https://www.youtube.com/@BeastSapro">Sapro Gaming Channel Link</a>
             </div>
         </div>
+        <!-- Logo and Server Name -->
         <div style="display: flex; align-items: center;">
             <img src="SaproZ.ico" alt="SaproZians Icon" style="height: 30px; margin-right: 10px;">
             <span>SaproZians</span>
         </div>
+        <!-- Server Journal Link -->
         <div style="margin-right: 35px;">
             <a href="https://discord.com/channels/986982849330675742/1157968589161250816" style="font-weight: bold;">Server Journal</a>
         </div>
     </div>
+    <!-- Background Image -->
     <div class="bg"></div>
+    <!-- Main Content -->
     <div class="content">
         <h1 class="title">SaproZians</h1>
         <p class="description">This is a full cover of SaproZian's rules which we cannot entirely list in the #rules channel inside the server. Make sure to read <a href="https://discord.com/terms"
                 style="color: lightblue !important; text-decoration: none;">Discord ToS</a> and <a href="https://discord.com/guidelines"
                 style="color: lightblue !important; text-decoration: none;">Community Guidelines</a> since we strictly follow these in the server. Thank you in advance for reading!</p>
     </div>
+    <!-- Topics Sidebar -->
     <div class="topics">
         <ul>
             <li><a href="#topic1">Respect channel topics</a></li>
