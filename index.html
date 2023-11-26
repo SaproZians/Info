@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaproZians's Server Info</title>
     <link rel="icon" href="SaproZ.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"> <!-- Add a new font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
     <meta property="og:title" content="SaproZians's Server Info">
     <meta property="og:description" content="The detailed information about the server called SaproZians. Make sure to read it to know more about the server.">
     <meta property="og:image" content="https://saprozians.github.io/Info/sapro%20banner.jpg">
@@ -18,12 +20,12 @@
             color: white;
         }
         .bg {
-            position: fixed; /* Make the background fixed */
+            position: fixed;
             top: 0;
             left: 0;
-            height: 100%; 
+            height: 100%;
             width: 100%;
-            background: url('Background banner.jpg') no-repeat center center fixed; 
+            background: url('Background banner.jpg') no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -37,45 +39,47 @@
             flex-direction: column;
             justify-content: center;
             padding: 20px;
-            animation: fadeIn 2s; /* Make the animation longer */
-            margin-top: 60px; /* Add a top margin to the content */
-            max-width: 800px; /* Set a maximum width for the content */
-            margin-left: auto; /* Center the content horizontally */
+            animation: fadeIn 2s;
+            margin-top: 60px;
+            max-width: 800px;
+            margin-left: auto;
             margin-right: auto;
         }
         .title {
-            font-size: 4em; /* Make the title larger */
+            font-size: 4em;
             text-align: center;
         }
         .description {
-            font-size: 1.3em; /* Slightly increase the description size */
-            text-align: left; /* Align the text to the left */
-            margin-bottom: 1.5em; /* Add a bit more margin at the bottom */
+            font-size: 1.3em;
+            text-align: left;
+            margin-bottom: 1.5em;
         }
         .topics {
             position: fixed;
             right: 20px;
-            top: 80px; /* Move the topics down */
+            top: 80px;
+            font-family: 'Arial', sans-serif;
         }
         .topics a {
-            font-family: 'Arial', sans-serif; /* Change the font */
-            font-weight: bold; /* Make the font bold */
-            color: lightgreen; /* Change the color to light green */
-            text-decoration: none; /* Remove the underline */
-            font-size: 1.5em; /* Make the text larger */
+            font-weight: bold;
+            color: lightgreen;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: block;
+            margin-bottom: 10px;
         }
         h1 {
-            font-size: 2.5em; /* Make the topic titles larger */
-            text-align: center; /* Center the topic texts */
+            font-size: 2.5em;
+            text-align: center;
         }
         p {
-            font-size: 1.2em; /* Make the topic descriptions smaller */
-            text-align: left; /* Align the text to the left */
-            margin: 0.5em 0; /* Adjust margin */
+            font-size: 1.2em;
+            text-align: left;
+            margin: 0.5em 0;
         }
         h2 {
             margin-bottom: 0;
-            text-align: center; /* Center the topic titles */
+            text-align: center;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -88,8 +92,8 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: center; /* Align items vertically */
-            background: linear-gradient(to right, #800080, #008000); /* Change the gradient colors */
+            align-items: center;
+            background: linear-gradient(to right, #800080, #008000);
             color: white;
             padding: 15px;
             z-index: 1;
@@ -97,15 +101,15 @@
         .navbar a {
             color: white;
             text-decoration: none;
-            margin-right: 10px; /* Move the "Server Journal" text a bit to the left */
+            margin-right: 10px;
         }
         .navbar span {
-            font-size: 2em; /* Make the text larger */
-            font-family: 'Playfair Display', serif; /* Change the font */
-            margin-left: 10px; /* Add some space between the logo and the text */
+            font-size: 2em;
+            font-family: 'Playfair Display', serif;
+            margin-left: 10px;
         }
         .navbar a:hover {
-            animation: colorchange 1s infinite; /* Add a color change animation */
+            animation: colorchange 1s infinite;
         }
         @keyframes colorchange {
             0% { color: red; }
@@ -121,16 +125,16 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background: linear-gradient(to right, #800080, black); /* Change the background color of the dropdown */
+            background: linear-gradient(to right, #800080, black);
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             padding: 12px 16px;
             z-index: 1;
-            border-radius: 15px; /* Add rounded corners */
+            border-radius: 15px;
         }
         .dropdown:hover .dropdown-content {
             display: block;
-            animation: dropdown 1s; /* Add a dropdown animation */
+            animation: dropdown 1s;
         }
         @keyframes dropdown {
             from { opacity: 0; top: 60px; }
@@ -138,12 +142,14 @@
         }
         /* CSS for the dropdown menu */
         .dropdown-content a {
-            color: #3b86ff !important; /* Change the text color to light blue */
+            color: #3b86ff !important;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
-        .dropdown-content a:hover {background-color: #f1f1f1}
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
     </style>
     <script>
         // JavaScript for the dropdown menu
@@ -154,7 +160,7 @@
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 var i;
-                for (i = 0; < dropdowns.length; i++) {
+                for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
                     if (openDropdown.classList.contains('show')) {
                         openDropdown.classList.remove('show');
@@ -213,7 +219,8 @@
         <p><strong>4.2</strong> - Don’t be racist/make fun of colors/joke about them, sexist, send death threats, or engage in hate speech. We strictly disallow these kind of behaviors here. Telling someone "kys" or that they should go kill themselves are considered as death threats, which are disallowed. Telling someone "I hate blacks", or "i hate n##ers", or making fun of the white or black color is a complete form of racism, and you'll be directly banned if you're caught doing so.</p>
         <p><strong>4.3</strong> - Sensitive topics. If you want to discuss something sensitive with a member of the server, kindly take it to DMs, as the general is supposed to have only healthy topics in it.
             
-            
+        <h2 id="topic5">5.0 - Political Discussions.</h2>
+        <p><strong>5.1</strong> - It's important to be nice to everyone in the server. No one's looking for a toxic chat with each other, this is a healthy community which we maintain healthy chats inside. No one wants someone to come and randomly being rude or toxic, and disliking everything just to piss off someone. Stay calm, nice, like everyone wants in the server.</p>
     </div>
 </body>
 </html>
