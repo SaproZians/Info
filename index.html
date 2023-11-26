@@ -319,7 +319,12 @@
     function scrollToSection(sectionId) {
         var section = document.querySelector(sectionId);
         if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+            var navbarHeight = document.querySelector('.navbar').offsetHeight;
+            var scrollPosition = section.offsetTop - navbarHeight;
+            window.scrollTo({
+                top: scrollPosition,
+                behavior: 'smooth'
+            });
         }
     }
 </script>
