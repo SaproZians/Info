@@ -338,16 +338,35 @@
         var section = document.querySelector(sectionId);
         if (section) {
             var navbarHeight = document.querySelector('.navbar').offsetHeight;
-            var scrollPosition = section.offsetTop - navbarHeight;
-            window.scrollTo({
-                top: scrollPosition,
-                behavior: 'smooth'
-            });
+            var targetOffset = section.offsetTop - navbarHeight;
+            var duration = 800; // adjust the duration as needed
+            var startTime;
+
+            function scrollAnimation(currentTime) {
+                if (startTime === undefined) {
+                    startTime = currentTime;
+                }
+                var timeElapsed = currentTime - startTime;
+                var progress = Math.min(timeElapsed / duration, 1);
+                window.scrollTo({
+                    top: easeInOutQuad(progress) * (targetOffset - 0) + 0,
+                    behavior: 'smooth'
+                });
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(scrollAnimation);
+                }
+            }
+
+            function easeInOutQuad(t) {
+                return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            }
+
+            requestAnimationFrame(scrollAnimation);
         }
     }
 
     // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('.topics a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
