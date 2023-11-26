@@ -201,7 +201,6 @@
                 opacity: 1;
                 top: 75px;
             }
-
         }
 
         .dropdown-content a {
@@ -239,35 +238,25 @@
             color: white;
         }
     </style>
-    <function myFunction() {
-    var dropdownContent = document.getElementById("myDropdown");
-    var excludeElements = dropdownContent.getElementsByClassName("exclude-dropdown");
+    <script>
+        function myFunction() {
+            var dropdownContent = document.getElementById("myDropdown");
+            dropdownContent.classList.toggle("show");
+        }
 
-    for (var i = 0; i < excludeElements.length; i++) {
-        var element = excludeElements[i];
-        element.style.display = "block"; // Show excluded elements
-    }
-
-    dropdownContent.classList.toggle("show");
-}
-
-function toggleSpoiler() {
-    var spoilerText = document.getElementById("spoilerText");
-    spoilerText.style.display = (spoilerText.style.display === "none" || spoilerText.style.display === "") ? "inline" : "none";
-}
-
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
             }
         }
-    }
-}
+    </script>
 </head>
 
 <body>
@@ -288,7 +277,8 @@ window.onclick = function (event) {
         </div>
         <!-- Server Journal Link -->
         <div style="margin-right: 35px;">
-            <a href="https://discord.com/channels/986982849330675742/1157968589161250816" style="font-weight: bold;">Server Journal</a>
+            <a href="https://discord.com/channels/986982849330675742/1157968589161250816" style="font-weight: bold;">Server
+                Journal</a>
         </div>
     </div>
     <!-- Background Image -->
@@ -296,9 +286,12 @@ window.onclick = function (event) {
     <!-- Main Content -->
     <div class="content">
         <h1 class="title">SaproZians</h1>
-        <p class="description">This is a full cover of SaproZian's rules which we cannot entirely list in the #rules channel inside the server. Make sure to read <a href="https://discord.com/terms"
-                style="color: lightblue !important; text-decoration: none;">Discord ToS</a> and <a href="https://discord.com/guidelines"
-                style="color: lightblue !important; text-decoration: none;">Community Guidelines</a> since we strictly follow these in the server. Thank you in advance for reading!</p>
+        <p class="description">This is a full cover of SaproZian's rules which we cannot entirely list in the #rules
+            channel inside the server. Make sure to read <a href="https://discord.com/terms"
+                style="color: lightblue !important; text-decoration: none;">Discord ToS</a> and <a
+                href="https://discord.com/guidelines"
+                style="color: lightblue !important; text-decoration: none;">Community Guidelines</a> since we strictly
+            follow these in the server. Thank you in advance for reading!</p>
     </div>
     <!-- Topics Sidebar -->
     <div class="topics">
